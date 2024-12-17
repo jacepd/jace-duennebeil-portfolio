@@ -1,0 +1,137 @@
+/* Global styles to ensure consistency across all pages */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Roboto', sans-serif; /* Consistent modern font */
+    background-color: #f4f4f4; /* Light background for the entire page */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Common header and footer for all pages */
+header, footer {
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Common Container Styling */
+.container {
+    flex: 1;
+    width: 80%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* Home Page Specific Styles */
+.home-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background: linear-gradient(135deg, #2112f3, #e74c3c); /* Gradient background for home page */
+    padding: 50px 20px;
+}
+
+.home-container h1 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.home-container p {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 300;
+}
+
+/* Navigation Bar Styling */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav ul li a:hover {
+    background-color: #e74c3c;
+    border-radius: 5px;
+}
+
+/* Footer Style */
+footer {
+    margin-top: auto;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+/* Footer Links */
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Style for About Section */
+.about-section {
+    display: flex; /* Flexbox to align text and image side by side */
+    justify-content: space-between; /* Space between the elements */
+    align-items: center; /* Vertically align the items */
+    margin-top: 2rem; /* Add margin at the top */
+}
+
+.about-text {
+    flex: 1; /* Allow the text to take up available space */
+    padding-right: 20px; /* Space between text and image */
+}
+
+.about-image img {
+    width: 700px; /* Set a larger image size */
+    height: auto; /* Keep aspect ratio */
+    border-radius: 80px; /* Optional: Add rounded corners to the image */
+}
+
+/* Style for the Resume Section */
+.resume-section embed {
+    width: 100%; /* Take full width of the container */
+    height: 1100px; /* Increased height to display more of the PDF */
+}
+
+/* Style for the Resume Image */
+.resume-section img {
+    width: 100%; /* Adjust to fit the container */
+    max-width: 800px; /* Max width to prevent stretching too far */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Remove space below the image */
+    margin: 20px 0; /* Add some space around the image */
+}
