@@ -82,6 +82,14 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
+/* Active Link Style */
+nav ul li a.active {
+    background-color: #e74c3c; /* Match the hover color */
+    border-radius: 5px;
+    color: white; /* Ensure text color stays white */
+    font-weight: bold; /* Make it stand out */
+}
+
 /* Footer Style */
 footer {
     margin-top: auto;
@@ -135,3 +143,210 @@ footer a:hover {
     display: block; /* Remove space below the image */
     margin: 20px 0; /* Add some space around the image */
 }
+
+/* Container for resume section */
+.resume-section {
+    display: flex;
+    flex-direction: column; /* Align button above the image */
+    align-items: center; /* Center both the button and the image */
+    gap: 1rem; /* Add space between button and image */
+}
+
+.resume-image {
+    width: 100%; 
+    max-width: 500px; /* Limit image size */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add slight shadow */
+}
+
+/* Style the download button */
+.download-button {
+    background-color: #e74c3c; /* Primary color for button */
+    color: #fff; /* White text color */
+    font-size: 1.2rem; /* Slightly larger text */
+    padding: 0.75rem 1.5rem; /* Space around text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-transform: uppercase; /* Make the text uppercase */
+    font-weight: bold; /* Make text bold */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for a 3D effect */
+}
+
+.download-button:hover {
+    background-color: #c0392b; /* Darker shade on hover */
+    transform: translateY(-3px); /* Lift button up slightly on hover */
+}
+
+.download-button:active {
+    transform: translateY(2px); /* Button "press" effect */
+}
+
+/* Container for Ultimate Frisbee Info */
+.container {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.frisbee-info h3, 
+.highlight-video h3, 
+.frisbee-gallery h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.frisbee-info p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/* Highlight Video Section */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 560px;
+    height: 315px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Gallery */
+.frisbee-gallery {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.frisbee-gallery .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.frisbee-image {
+    width: auto;
+    height: 100%;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.frisbee-image:hover {
+    transform: scale(1.05);
+}
+
+/* Active Link Highlight */
+nav ul li a.active {
+    background-color: #e74c3c;
+    color: white !important;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+}
+
+/* Overall Page Layout */
+.container {
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.frisbee-section {
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.frisbee-section h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.frisbee-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #2906f1;
+    text-transform: uppercase;
+}
+
+.frisbee-section h6 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    margin-top: 5rem;
+    color: #2906f1;
+    text-transform: uppercase;
+}
+
+.frisbee-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #f808e4;
+    text-transform: uppercase;
+}
+
+.frisbee-section h4 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #e74c3c;
+    text-transform: uppercase;
+}
+
+.frisbee-section h5 {
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+    margin-top: 5rem;
+    text-transform: uppercase;
+}
+
+.frisbee-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    color: #555;
+}
+
+/* Video Section */
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.video-container iframe {
+    width: 100%;
+    max-width: 900px;
+    height: 506px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Gallery */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.frisbee-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.frisbee-image:hover {
+    transform: scale(1.05);
+}
+
