@@ -183,12 +183,6 @@ footer a:hover {
     transform: translateY(2px); /* Button "press" effect */
 }
 
-/* Container for Ultimate Frisbee Info */
-.container {
-    padding: 2rem 0;
-    text-align: center;
-}
-
 .frisbee-info h3, 
 .highlight-video h3, 
 .frisbee-gallery h3 {
@@ -255,7 +249,7 @@ nav ul li a.active {
 }
 
 /* Overall Page Layout */
-.container {
+.frisbee-container {
     padding: 2rem 0;
     text-align: center;
 }
@@ -281,7 +275,7 @@ nav ul li a.active {
 .frisbee-section h6 {
     font-size: 1.5rem;
     margin-bottom: 1.5rem;
-    margin-top: 5rem;
+    margin-top: 4rem;
     color: #2906f1;
     text-transform: uppercase;
 }
@@ -337,7 +331,16 @@ nav ul li a.active {
     gap: 1rem;
 }
 
-.frisbee-image {
+.frisbee-image-horizontal {
+    width: 500px;
+    max-width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.frisbee-image-vertical {
     width: 100%;
     max-width: 300px;
     height: auto;
@@ -350,3 +353,93 @@ nav ul li a.active {
     transform: scale(1.05);
 }
 
+.frisbee-poster {
+    width: 40%; /* Set width to 80% of the container */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    margin-left: 30px;
+    border: 5px solid #fff; /* Add white border around the image */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    transition: transform 0.3s, opacity 0.3s; /* Smooth transition for hover effect */
+}
+
+/* Projects Page Specific Styles */
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+/* Section for Completed Projects */
+.completed-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.completed-projects h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.completed-projects p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Section for In-Progress Projects */
+.in-progress-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: #f9f9f9;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.in-progress-projects h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.in-progress-projects p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Style the download button */
+.github-button {
+    background-color: #e74c3c; /* Primary color for button */
+    color: #fff; /* White text color */
+    font-size: 1.2rem; /* Slightly larger text */
+    padding: 0.75rem 1.5rem; /* Space around text */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    text-transform: uppercase; /* Make the text uppercase */
+    font-weight: bold; /* Make text bold */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transitions */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Shadow for a 3D effect */
+}
+
+.github-button-container {
+    padding: 2rem 0;
+    text-align: center;
+    margin-top: 3rem;
+}
