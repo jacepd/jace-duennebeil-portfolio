@@ -470,3 +470,37 @@ nav ul li a.active {
     margin-top: 3rem;
 }
 
+.job {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+}
+
+.job:last-child {
+    border-bottom: none;
+}
+
+.microsoft-job-img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.flemings-job-img {
+    width: auto;
+    height: 300px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.job-info h3 {
+    margin: 0 0 5px 0;
+    color: #444;
+}
