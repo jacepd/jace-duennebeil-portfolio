@@ -110,24 +110,50 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Style for About Section */
-.about-section {
-    display: flex; /* Flexbox to align text and image side by side */
-    justify-content: space-between; /* Space between the elements */
-    align-items: center; /* Vertically align the items */
-    margin-top: 2rem; /* Add margin at the top */
+.page-title {
+    font-size: 2.0rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-.about-text {
-    flex: 1; /* Allow the text to take up available space */
-    padding-right: 20px; /* Space between text and image */
+.about-section {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.about-image {
+    text-align: center; /* Centers the image horizontally */
+    margin-bottom: 2rem; /* Adds spacing between image and text */
 }
 
 .about-image img {
-    width: 700px; /* Set a larger image size */
-    height: auto; /* Keep aspect ratio */
-    border-radius: 80px; /* Optional: Add rounded corners to the image */
+    width: 600px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.about-text {
+    line-height: 1.8;
+    font-size: 1rem;
+    color: #444;
+}
+
+.about-text p {
+    margin-bottom: 1.5rem;
+}
+
+.about-text p:first-child {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #222;
+}
+
 
 /* Style for the Resume Section */
 .resume-section embed {
