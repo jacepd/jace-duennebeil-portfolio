@@ -375,10 +375,6 @@ nav ul li a.active {
     transition: transform 0.3s ease-in-out;
 }
 
-.frisbee-image:hover {
-    transform: scale(1.05);
-}
-
 .frisbee-poster {
     width: 40%; /* Set width to 80% of the container */
     height: auto; /* Maintain aspect ratio */
@@ -541,6 +537,7 @@ nav ul li a.active {
 .vertical {
     width: 25%;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .gallery-education {
@@ -553,9 +550,20 @@ nav ul li a.active {
     margin-top: 20px;
     width: 100%;
     max-width: 800px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
 }
 
 .horizontal {
     width: 100%;
+    object-fit: cover;
+}
+
+.logo {
+    width: 50%;
+    max-width: 300px;
+    height: 50%;
+    max-height: 300px;
     object-fit: cover;
 }
